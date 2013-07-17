@@ -13,6 +13,7 @@ Ext.define('search.Application', {
 
     stores: [
         'Categories',
-        'PayTypes'
+        'PayTypes',
+        'Persons'
     ]
 });

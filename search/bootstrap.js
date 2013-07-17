@@ -56,6 +56,7 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
+  "search.store.Persons": [],
   "search.store.Categories": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [],
@@ -167,6 +168,7 @@ Ext.ClassManager.addNameAliasMappings({
     "simlet.basic"
   ],
   "Ext.ux.SlidingPager": [],
+  "search.store.Persons": [],
   "search.store.Categories": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [

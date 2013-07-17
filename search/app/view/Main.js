@@ -1,3 +1,4 @@
+// @TODO разбить на отдельные виды для формы и грида
 Ext.define('search.view.Main', {
     extend: 'Ext.panel.Panel',
     requires:[
@@ -10,7 +11,9 @@ Ext.define('search.view.Main', {
         'Ext.form.field.ComboBox',
         'Ext.form.CheckboxGroup',
         'Ext.form.FieldSet',
-        'Ext.toolbar.TextItem'
+        'Ext.toolbar.TextItem',
+        'Ext.grid.Panel',
+        'Ext.grid.column.Date'
     ],
 //    tools: [
 //        {type:'plus'},
@@ -20,13 +23,14 @@ Ext.define('search.view.Main', {
     layout: 'border',
     defaults: {
         split: true,
-        bodyPadding: 15,
         overflowY: 'auto'
     },
     items: [{
-        region: 'center',
+        region: 'north',
+        collapsible: true,
         xtype: 'panel',
         title: 'Поиск',
+        bodyPadding: 15,
         items: [{
             xtype: 'form',
             buttons: [
@@ -86,7 +90,7 @@ Ext.define('search.view.Main', {
                         {boxLabel: 'Item 4'},
                         {boxLabel: 'Item 5'},
                         {boxLabel: 'Item 6'},
-                        {boxLabel: 'Item 7'},
+                        {boxLabel: 'Item 7'}
                     ]
                 }, {
                     flex:1,
@@ -98,10 +102,12 @@ Ext.define('search.view.Main', {
                         fieldLabel: 'Учитывать даты'
                     }, {
                         xtype: 'datefield',
-                        fieldLabel: 'Дата начала'
+                        fieldLabel: 'Дата начала',
+                        editable: false
                     }, {
                         xtype: 'datefield',
-                        fieldLabel: 'Дата конца'
+                        fieldLabel: 'Дата конца',
+                        editable: false
                     }]
                 }]
             }, {
@@ -124,7 +130,7 @@ Ext.define('search.view.Main', {
                         {boxLabel: 'Item 4'},
                         {boxLabel: 'Item 5'},
                         {boxLabel: 'Item 6'},
-                        {boxLabel: 'Item 7'},
+                        {boxLabel: 'Item 7'}
                     ]
                 }, {
                     flex:1,
@@ -136,10 +142,12 @@ Ext.define('search.view.Main', {
                         fieldLabel: 'Учитывать даты'
                     }, {
                         xtype: 'datefield',
-                        fieldLabel: 'Дата начала'
+                        fieldLabel: 'Дата начала',
+                        editable: false
                     }, {
                         xtype: 'datefield',
-                        fieldLabel: 'Дата конца'
+                        fieldLabel: 'Дата конца',
+                        editable: false
                     }]
                 }]
             }, {
@@ -153,11 +161,75 @@ Ext.define('search.view.Main', {
             }]
         }]
     }, {
-        region: 'south',
-        xtype: 'panel',
-        collapsible: true,
+        region: 'center',
+        xtype: 'gridpanel',
         title: 'Результат поиска',
-        minHeight: 300
+        store: 'Persons',
+
+        columns: [{
+            header: "№ дела",
+            flex: 1,
+            sortable: true,
+            dataIndex: 'case_num'
+        }, {
+            header: "ФИО",
+            flex: 3,
+            sortable: true,
+            dataIndex: 'name'
+        }, {
+            header: "Дата рождения",
+            flex: 2,
+            sortable: true,
+            xtype: 'datecolumn',
+            dataIndex: 'birthdate'
+        }, {
+            header: "Возраст",
+            flex: 1,
+            sortable: true,
+            dataIndex: 'age'
+        }, {
+            header: "Льготные категории",
+            flex: 3,
+            sortable: true,
+            dataIndex: 'categories'
+        }, {
+            header: "Адрес",
+            flex: 3,
+            sortable: true,
+            dataIndex: 'address'
+        }, {
+            header: "Паспортные данные",
+            flex: 3,
+            sortable: true,
+            dataIndex: 'passport_data'
+        }, {
+            header: "Дата закрытия",
+            flex: 2,
+            sortable: true,
+            xtype: 'datecolumn',
+            dataIndex: 'date_closed'
+        }, {
+            header: "Последняя выплата",
+            flex: 3,
+            sortable: true,
+            xtype: 'datecolumn',
+            dataIndex: 'date_last_pay'
+        }],
+
+        loadMask: true,
+
+        viewConfig: {
+            stripeRows: true
+        },
+//        bbar: pagingBar,
+        tbar: [
+            '->',
+            {
+                xtype: 'triggerfield',
+                trigger1Cls: Ext.baseCSSPrefix + 'form-clear-trigger',
+                trigger2Cls: Ext.baseCSSPrefix + 'form-search-trigger'
+            }
+        ]
     }],
 
     dockedItems: [{
@@ -172,7 +244,6 @@ Ext.define('search.view.Main', {
             flex: 1
         }, {
             xtype: 'splitbutton',
-//            icon: 'add16',
             text: 'Отчёт',
             menu: [
                 {text: '.xls'},
@@ -180,7 +251,6 @@ Ext.define('search.view.Main', {
             ]
         }, {
             xtype: 'splitbutton',
-//            icon: 'add16',
             text: 'Выплаты',
             menu: [
                 {text: '.xls'},
@@ -188,7 +258,6 @@ Ext.define('search.view.Main', {
             ]
         }, {
             xtype: 'button',
-//            icon: 'add16',
             text: 'Добавить'
         }]
     }, {
