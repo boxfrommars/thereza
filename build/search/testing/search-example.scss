@@ -1,4 +1,4 @@
-$image-search-path: '/home/xu/Workspace/thereza2/build/search/testing/resources';
+$image-search-path: '/home/xu/Workspace/thereza/build/search/testing/resources';
 $theme-name:  't2theme' !default;
 $include-ext-abstractcomponent: true;
 $include-ext-abstractmanager: true;
@@ -554,6 +554,8 @@ $include-extthemeneptune-toolbar-toolbar: true;
 $include-search-application: true;
 $include-search-app-application: true;
 $include-search-controller-main: true;
+$include-search-store-categories: true;
+$include-search-store-paytypes: true;
 $include-search-view-main: true;
 $include-search-view-viewport: true;
 /* including package ext-theme-base */

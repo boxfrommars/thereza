@@ -56,6 +56,7 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
+  "search.store.Categories": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [],
   "ExtThemeNeptune.layout.component.Dock": [],
@@ -66,6 +67,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.event.Player": [],
   "ExtThemeNeptune.panel.Tool": [],
   "Ext.ux.ajax.SimManager": [],
+  "search.store.PayTypes": [],
   "Ext.ux.grid.filter.BooleanFilter": [],
   "Ext.ux.ToolbarDroppable": [],
   "Ext.ux.event.Maker": [],
@@ -165,6 +167,7 @@ Ext.ClassManager.addNameAliasMappings({
     "simlet.basic"
   ],
   "Ext.ux.SlidingPager": [],
+  "search.store.Categories": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
@@ -177,6 +180,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.event.Player": [],
   "ExtThemeNeptune.panel.Tool": [],
   "Ext.ux.ajax.SimManager": [],
+  "search.store.PayTypes": [],
   "Ext.ux.grid.filter.BooleanFilter": [
     "gridfilter.boolean"
   ],

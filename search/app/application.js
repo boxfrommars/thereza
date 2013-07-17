@@ -12,6 +12,7 @@ Ext.define('search.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'Categories',
+        'PayTypes'
     ]
 });

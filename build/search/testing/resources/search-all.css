@@ -4725,6 +4725,61 @@ img {
   vertical-align: top;
 }
 
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Checkbox.scss */
+.x-form-cb-wrap {
+  vertical-align: top;
+}
+
+/* line 5, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Checkbox.scss */
+.x-form-cb {
+  vertical-align: top;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+/* line 10, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Checkbox.scss */
+.x-form-cb::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 16, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Checkbox.scss */
+.x-form-cb-label {
+  display: inline-block;
+  zoom: 1;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset {
+  display: block;
+  /* preserve margins in IE */
+  position: relative;
+}
+
+/* line 6, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset-header {
+  overflow: hidden;
+}
+/* line 10, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset-header .x-form-item,
+.x-fieldset-header .x-tool {
+  float: left;
+}
+/* line 14, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset-header .x-form-cb-wrap {
+  font-size: 0;
+  line-height: 0;
+}
+/* line 19, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset-header .x-form-cb {
+  margin: 0;
+}
+
+/* line 33, ../../../../ext/packages/ext-theme-base/sass/src/form/FieldSet.scss */
+.x-fieldset-header-text {
+  float: left;
+}
+
 /*misc*/
 /* line 4, ../../../../ext/packages/ext-theme-base/sass/src/form/Panel.scss */
 .x-webkit *:focus {
@@ -4745,6 +4800,130 @@ img {
 /* line 33, ../../../../ext/packages/ext-theme-base/sass/src/form/Panel.scss */
 .x-form-form-item td {
   border-top: 1px solid transparent;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Trigger.scss */
+.x-form-trigger {
+  cursor: pointer;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+/* line 5, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Trigger.scss */
+.x-item-disabled .x-form-trigger {
+  cursor: default;
+}
+
+/* line 10, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Trigger.scss */
+.x-trigger-noedit {
+  cursor: default;
+}
+
+/* line 14, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap {
+  vertical-align: top;
+  border-collapse: separate;
+}
+
+/* line 2, ../../../../ext/packages/ext-theme-base/sass/src/form/field/Spinner.scss */
+.x-form-spinner-up,
+.x-form-spinner-down {
+  font-size: 0;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker {
+  position: relative;
+}
+
+/* line 5, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-inner {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+}
+
+/* line 11, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-cell {
+  padding: 0;
+}
+
+/* line 15, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-header {
+  position: relative;
+  zoom: 1;
+}
+
+/* line 20, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-arrow {
+  position: absolute;
+  outline: none;
+  font-size: 0;
+}
+
+/* line 26, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-column-header {
+  padding: 0;
+}
+
+/* line 30, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-datepicker-date {
+  display: block;
+  zoom: 1;
+  text-decoration: none;
+}
+
+/* line 36, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 42, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-body {
+  height: 100%;
+}
+
+/* line 47, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-months,
+.x-monthpicker-years {
+  float: left;
+  height: 100%;
+}
+
+/* line 52, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-item {
+  float: left;
+}
+
+/* line 56, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-item-inner {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 61, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-button-ct {
+  float: left;
+  text-align: center;
+}
+
+/* line 66, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-button {
+  display: inline-block;
+  outline: none;
+  font-size: 0;
+}
+
+/* line 72, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-monthpicker-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/src/picker/Date.scss */
+.x-strict .x-ie6 .x-monthpicker-buttons {
+  bottom: -1px;
 }
 
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/layout/container/Fit.scss */
@@ -12673,6 +12852,698 @@ textarea.x-form-empty-field {
   background-image: url(images/shared/icon-error.png);
 }
 
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-wrap {
+  height: 24px;
+}
+
+/* line 10, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb {
+  margin-top: 5px;
+}
+
+/* line 19, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-checkbox {
+  width: 15px;
+  height: 15px;
+  background: url(images/form/checkbox.png) no-repeat;
+}
+
+/* line 25, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-checked .x-form-checkbox {
+  background-position: 0 -15px;
+}
+
+/* Focused */
+/* line 30, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-checkbox-focus {
+  background-position: -15px 0;
+}
+
+/* line 34, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-checked .x-form-checkbox-focus {
+  background-position: -15px -15px;
+}
+
+/* boxLabel */
+/* line 40, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-label {
+  margin-top: 4px;
+  font: normal 13px/17px helvetica, arial, verdana, sans-serif;
+}
+
+/* line 53, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-label-before {
+  margin-right: 4px;
+}
+
+/* line 64, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Checkbox.scss */
+.x-form-cb-label-after {
+  margin-left: 4px;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/CheckboxGroup.scss */
+.x-form-checkboxgroup-body {
+  padding: 0 4px;
+}
+
+/* line 6, ../../../../ext/packages/ext-theme-neutral/sass/src/form/CheckboxGroup.scss */
+.x-form-invalid .x-form-checkboxgroup-body {
+  border: 1px solid #cf4c35;
+}
+
+/* line 16, ../../../../ext/packages/ext-theme-neutral/sass/src/form/CheckboxGroup.scss */
+.x-check-group-alt {
+  background: #f5f5f5;
+  border-top: 1px dotted #f5f5f5;
+  border-bottom: 1px dotted #f5f5f5;
+}
+
+/* line 22, ../../../../ext/packages/ext-theme-neutral/sass/src/form/CheckboxGroup.scss */
+.x-form-check-group-label {
+  color: black;
+  padding: 2px;
+  margin: 0 30px 5px 0;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: black;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset {
+  border: 1px solid #b5b8c8;
+  padding: 0 10px;
+  margin: 0 0 10px;
+}
+
+/* line 11, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie8m .x-fieldset,
+.x-quirks .x-ie .x-fieldset {
+  padding-top: 0;
+}
+/* line 13, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie8m .x-fieldset .x-fieldset-body,
+.x-quirks .x-ie .x-fieldset .x-fieldset-body {
+  padding-top: 0;
+}
+
+/* line 19, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-header-checkbox {
+  line-height: 16px;
+  margin: 1px 3px 0 0;
+}
+
+/* line 24, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-header {
+  padding: 0 3px 1px;
+}
+/* line 27, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-header .x-tool {
+  margin-top: 1px;
+  padding: 0;
+}
+
+/* line 39, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-header-text {
+  font: 12px/16px bold helvetica, arial, verdana, sans-serif;
+  color: black;
+  padding: 1px 0;
+}
+
+/* line 44, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-header-text-collapsible {
+  cursor: pointer;
+}
+
+/* line 50, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-with-title .x-fieldset-header-checkbox,
+.x-fieldset-with-title .x-tool {
+  margin: 1px 3px 0 0;
+}
+
+/* line 66, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-webkit .x-fieldset-header {
+  -webkit-padding-start: 3px;
+  -webkit-padding-end: 3px;
+}
+
+/* line 76, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-opera .x-fieldset-with-legend {
+  margin-top: -1px;
+}
+/* line 79, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-opera.x-mac .x-fieldset-header-text {
+  padding: 2px 0 0;
+}
+
+/* line 87, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-strict .x-ie8 .x-fieldset-header {
+  margin-bottom: -1px;
+}
+/* line 91, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-strict .x-ie8 .x-fieldset-header .x-tool,
+.x-strict .x-ie8 .x-fieldset-header .x-fieldset-header-text,
+.x-strict .x-ie8 .x-fieldset-header .x-fieldset-header-checkbox {
+  position: relative;
+  top: -1px;
+}
+
+/* line 101, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-quirks .x-ie .x-fieldset-header,
+.x-ie8m .x-fieldset-header {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/* line 109, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-collapsed .x-fieldset-body {
+  display: none;
+}
+
+/* line 114, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-collapsed {
+  padding-bottom: 0 !important;
+  border-width: 1px 1px 0 1px !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+/* line 123, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie6 .x-fieldset-collapsed {
+  border-width: 1px 0 0 0 !important;
+  padding-bottom: 0 !important;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+/* line 131, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie .x-fieldset-bwrap {
+  zoom: 1;
+}
+
+/* line 137, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset .x-tool-toggle {
+  background-image: url(images/fieldset/collapse-tool.png);
+  background-position: 0 0;
+}
+/* line 144, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset .x-tool-over .x-tool-toggle {
+  background-position: 0 -15px;
+}
+
+/* line 151, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-collapsed .x-tool-toggle {
+  background-position: -15px 0;
+}
+/* line 156, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-collapsed .x-tool-over .x-tool-toggle {
+  background-position: -15px -15px;
+}
+
+/* IE legend positioning bug */
+/* line 164, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie .x-fieldset-noborder legend {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+/* line 170, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-ie .x-fieldset-noborder legend span {
+  position: absolute;
+  left: 16px;
+}
+
+/* line 176, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset {
+  overflow: hidden;
+}
+
+/* line 180, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-bwrap {
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 186, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
+.x-fieldset-body {
+  overflow: hidden;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-trigger {
+  background: url(images/form/trigger.png);
+  width: 22px;
+}
+
+/* line 18, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-trigger-cell {
+  background-color: white;
+  width: 22px;
+}
+
+/* line 23, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-trigger-over {
+  background-position: -22px 0;
+}
+
+/* line 30, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap-focus .x-form-trigger {
+  background-position: -66px 0;
+}
+
+/* line 37, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap-focus .x-form-trigger-over {
+  background-position: -88px 0;
+}
+
+/* line 42, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-trigger-click,
+.x-form-trigger-wrap-focus .x-form-trigger-click {
+  background-position: -44px 0;
+}
+
+/* line 49, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-clear-trigger {
+  background-image: url(images/form/clear-trigger.png);
+}
+
+/* line 59, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-form-search-trigger {
+  background-image: url(images/form/search-trigger.png);
+}
+
+/* line 73, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-quirks .prefixie6 .x-form-trigger-input-cell {
+  height: 24px;
+}
+/* line 77, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Trigger.scss */
+.x-quirks .prefixie6 .x-field-toolbar .x-form-trigger-input-cell {
+  height: 24px;
+}
+
+/* line 3, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+div.x-form-spinner-up,
+div.x-form-spinner-down {
+  background-image: url(images/form/spinner.png);
+  background-color: white;
+  width: 22px;
+  height: 11px;
+}
+
+/* line 19, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+.x-form-spinner-down {
+  background-position: 0 -11px;
+}
+
+/* line 23, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+.x-form-trigger-wrap-focus .x-form-spinner-down {
+  background-position: -66px -11px;
+}
+
+/* line 26, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+.x-form-trigger-wrap .x-form-spinner-down-over {
+  background-position: -22px -11px;
+}
+
+/* line 29, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+.x-form-trigger-wrap-focus .x-form-spinner-down-over {
+  background-position: -88px -11px;
+}
+
+/* line 32, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Spinner.scss */
+.x-form-trigger-wrap .x-form-spinner-down-click {
+  background-position: -44px -11px;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-page-number {
+  width: 30px;
+}
+
+/* line 5, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-page-first {
+  background-image: url(images/grid/page-first.png);
+}
+
+/* line 9, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-page-prev {
+  background-image: url(images/grid/page-prev.png);
+}
+
+/* line 13, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-page-next {
+  background-image: url(images/grid/page-next.png);
+}
+
+/* line 17, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-page-last {
+  background-image: url(images/grid/page-last.png);
+}
+
+/* line 21, ../../../../ext/packages/ext-theme-neutral/sass/src/toolbar/Paging.scss */
+.x-tbar-loading {
+  background-image: url(images/grid/refresh.png);
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e1e1;
+  background: white;
+}
+
+/* line 10, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-strict .x-ie7m .x-boundlist-list-ct {
+  position: relative;
+}
+
+/* line 15, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist-item {
+  padding: 0 6px;
+  line-height: 22px;
+  cursor: pointer;
+  cursor: hand;
+  position: relative;
+  /*allow hover in IE on empty items*/
+  zoom: 1;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: white;
+}
+
+/* line 33, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist-selected {
+  background: #c1ddf1;
+  border-color: #c1ddf1;
+}
+
+/* line 38, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist-item-over {
+  background: #d6e8f6;
+  border-color: #d6e8f6;
+}
+
+/* line 43, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist-floating {
+  border-top-width: 0;
+}
+
+/* line 47, ../../../../ext/packages/ext-theme-neutral/sass/src/view/BoundList.scss */
+.x-boundlist-above {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+/* line 9, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e1e1;
+  background-color: white;
+  width: 212px;
+}
+
+/* line 19, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-header {
+  padding: 4px 6px;
+  text-align: center;
+  background-image: none;
+  background-color: #f5f5f5;
+}
+
+/* line 32, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-arrow {
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* line 50, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+a.x-datepicker-arrow:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 55, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-next {
+  right: 6px;
+  background-image: url(images/datepicker/arrow-right.png);
+}
+
+/* line 60, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-prev {
+  left: 6px;
+  background-image: url(images/datepicker/arrow-left.png);
+}
+
+/* line 76, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-month .x-btn,
+.x-datepicker-month .x-btn .x-btn-tc,
+.x-datepicker-month .x-btn .x-btn-tl,
+.x-datepicker-month .x-btn .x-btn-tr,
+.x-datepicker-month .x-btn .x-btn-mc,
+.x-datepicker-month .x-btn .x-btn-ml,
+.x-datepicker-month .x-btn .x-btn-mr,
+.x-datepicker-month .x-btn .x-btn-bc,
+.x-datepicker-month .x-btn .x-btn-bl,
+.x-datepicker-month .x-btn .x-btn-br {
+  background: transparent;
+  border-width: 0 !important;
+}
+/* line 83, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-month .x-btn-inner {
+  color: #3892d3;
+}
+/* line 88, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-month .x-btn-split-right {
+  background-image: url(images/datepicker/month-arrow.png);
+  padding-right: 8px;
+}
+
+/* line 94, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-column-header {
+  width: 30px;
+  color: black;
+  font: bold 13px helvetica, arial, verdana, sans-serif;
+  text-align: right;
+  background-image: none;
+  background-color: white;
+}
+
+/* line 113, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-column-header-inner {
+  line-height: 25px;
+  padding: 0 9px 0 0;
+}
+
+/* line 118, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-cell {
+  text-align: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+/* line 128, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-date {
+  padding: 0 7px 0 0;
+  font: normal 13px helvetica, arial, verdana, sans-serif;
+  color: black;
+  cursor: pointer;
+  line-height: 23px;
+}
+
+/* line 138, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+a.x-datepicker-date:hover {
+  color: black;
+  background-color: #eaf3fa;
+}
+
+/* line 143, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-selected {
+  border-style: solid;
+  border-color: #3892d3;
+}
+/* line 146, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-selected .x-datepicker-date {
+  background-color: #d6e8f6;
+  font-weight: bold;
+}
+
+/* line 152, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-today {
+  border-color: darkred;
+  border-style: solid;
+}
+
+/* line 159, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-prevday .x-datepicker-date,
+.x-datepicker-nextday .x-datepicker-date {
+  color: #bfbfbf;
+}
+
+/* line 166, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-disabled a.x-datepicker-date {
+  background-color: #eeeeee;
+  cursor: default;
+  color: gray;
+}
+
+/* line 174, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-disabled a.x-datepicker-date:hover {
+  background-color: #eeeeee;
+}
+
+/* line 179, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-footer,
+.x-monthpicker-buttons {
+  padding: 3px 0;
+  background-image: none;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+/* line 195, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-datepicker-footer .x-btn,
+.x-monthpicker-buttons .x-btn {
+  margin: 0 3px 0 2px;
+}
+
+/* line 201, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker {
+  width: 212px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e1e1;
+  background-color: white;
+}
+
+/* line 211, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-months {
+  border-width: 0 1px 0 0;
+  border-color: #e1e1e1;
+  border-style: solid;
+  width: 105px;
+}
+/* line 220, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-months .x-monthpicker-item {
+  width: 52px;
+}
+
+/* line 225, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-years {
+  width: 105px;
+}
+/* line 228, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-years .x-monthpicker-item {
+  width: 52px;
+}
+
+/* line 233, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-item {
+  margin: 5px 0 5px;
+  font: normal 13px helvetica, arial, verdana, sans-serif;
+  text-align: center;
+}
+
+/* line 239, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-item-inner {
+  margin: 0 5px 0 5px;
+  color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+/* line 254, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+a.x-monthpicker-item-inner:hover {
+  background-color: #eaf3fa;
+}
+
+/* line 258, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-selected {
+  background-color: #d6e8f6;
+  border-style: solid;
+  border-color: #3892d3;
+}
+
+/* line 264, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav {
+  height: 34px;
+}
+
+/* line 268, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-button-ct {
+  width: 52px;
+}
+
+/* line 272, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-button {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  margin-top: 11px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  background-color: white;
+}
+
+/* line 289, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+a.x-monthpicker-yearnav-button:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 294, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-next {
+  background-image: url(images/datepicker/arrow-right.png);
+  background-position: 0 0;
+}
+
+/* line 299, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-next-over {
+  background-position: 0 0;
+}
+
+/* line 303, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-prev {
+  background-image: url(images/datepicker/arrow-left.png);
+  background-position: 0 0;
+}
+
+/* line 308, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-yearnav-prev-over {
+  background-position: 0 0;
+}
+
+/* line 313, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-small .x-monthpicker-item {
+  margin: 2px 0 2px;
+}
+/* line 317, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-small .x-monthpicker-item-inner {
+  margin: 0 5px 0 5px;
+}
+/* line 321, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-small .x-monthpicker-yearnav {
+  height: 28px;
+}
+/* line 325, ../../../../ext/packages/ext-theme-neutral/sass/src/picker/Date.scss */
+.x-monthpicker-small .x-monthpicker-yearnav-button {
+  margin-top: 8px;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Date.scss */
+.x-form-date-trigger {
+  background-image: url(images/form/date-trigger.png);
+}
+
 /* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/resizer/Splitter.scss */
 .x-collapse-el {
   cursor: pointer;
@@ -18285,6 +19156,34 @@ body.x-nbr .x-panel-header-light-framed-collapsed-left-frameInfo {
 .x-panel-light-framed-outer-border-trbl {
   border-color: #157fcc !important;
   border-width: 1px !important;
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-form-trigger {
+  height: 22px;
+}
+
+/* line 9, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap {
+  border: 1px solid;
+  border-color: silver #d9d9d9 #d9d9d9;
+}
+/* line 12, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap .x-form-text {
+  border-width: 0;
+  height: 22px;
+}
+/* line 16, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-content-box .x-form-trigger-wrap .x-form-text {
+  height: 15px;
+}
+/* line 22, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-form-trigger-wrap-focus .x-form-trigger-wrap {
+  border-color: #3892d3;
+}
+/* line 26, ../../../../ext/packages/ext-theme-neptune/sass/src/form/field/Trigger.scss */
+.x-form-invalid .x-form-trigger-wrap {
+  border-color: #cf4c35;
 }
 
 /* line 1, ../../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer.scss */
