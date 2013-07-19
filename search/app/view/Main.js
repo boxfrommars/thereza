@@ -12,6 +12,7 @@ Ext.define('search.view.Main', {
         'Ext.form.CheckboxGroup',
         'Ext.form.FieldSet',
         'Ext.toolbar.TextItem',
+        'Ext.toolbar.Paging',
         'Ext.grid.Panel',
         'Ext.grid.column.Date'
     ],
@@ -44,10 +45,10 @@ Ext.define('search.view.Main', {
             layout: {
                 type: 'vbox'
             },
-            width: 650,
+            width: 700,
             defaults: {
                 labelWidth: 150,
-                width: 650
+                width: 700
             },
             items: [{
                 xtype: 'numberfield',
@@ -158,6 +159,21 @@ Ext.define('search.view.Main', {
                 xtype: 'numberfield',
                 name: 'num',
                 fieldLabel: 'Стаж'
+            }, {
+                xtype: 'fieldset',
+                title: 'Модификаторы',
+                items: [{
+                    defaults: {
+                        xtype: 'checkbox'
+                    },
+                    xtype: 'checkboxgroup',
+                    items: [
+                        {boxLabel: 'В найденном'},
+                        {boxLabel: 'Исключить найденное'},
+                        {boxLabel: 'В удалённых'},
+                        {boxLabel: 'В закрытых'}
+                    ]
+                }]
             }]
         }]
     }, {
@@ -181,7 +197,8 @@ Ext.define('search.view.Main', {
             flex: 2,
             sortable: true,
             xtype: 'datecolumn',
-            dataIndex: 'birthdate'
+            dataIndex: 'birthdate',
+            format: 'd.m.Y'
         }, {
             header: "Возраст",
             flex: 1,
@@ -207,13 +224,15 @@ Ext.define('search.view.Main', {
             flex: 2,
             sortable: true,
             xtype: 'datecolumn',
-            dataIndex: 'date_closed'
+            dataIndex: 'date_closed',
+            format: 'd.m.Y'
         }, {
             header: "Последняя выплата",
             flex: 3,
             sortable: true,
             xtype: 'datecolumn',
-            dataIndex: 'date_last_pay'
+            dataIndex: 'date_last_pay',
+            format: 'd.m.Y'
         }],
 
         loadMask: true,
@@ -229,7 +248,14 @@ Ext.define('search.view.Main', {
                 trigger1Cls: Ext.baseCSSPrefix + 'form-clear-trigger',
                 trigger2Cls: Ext.baseCSSPrefix + 'form-search-trigger'
             }
-        ]
+        ],
+        bbar: {
+            xtype: 'pagingtoolbar',
+            store: 'Persons',
+            displayInfo: true,
+//            displayMsg: 'Displaying topics {0} - {1} of {2}',
+            emptyMsg: "No topics to display"
+        }
     }],
 
     dockedItems: [{
