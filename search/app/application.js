@@ -1,19 +1,16 @@
 Ext.define('search.Application', {
     name: 'search',
 
+    namespaces: ['Thereza'],
     extend: 'Ext.app.Application',
 
     views: [
         // TODO: add views here
     ],
 
-    controllers: [
-        // TODO: add controllers here
-    ],
-
     stores: [
         'Categories',
         'PayTypes',
-        'Persons'
+        'Thereza.store.Cards'
     ]
 });

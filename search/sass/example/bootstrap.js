@@ -9,6 +9,7 @@ Ext.Loader.addClassPathMappings({
   "ExtThemeNeptune": "../../../ext/packages/ext-theme-neptune/overrides",
   "Ext": "../../../ext/src",
   "search": "../../app",
+  "Thereza": "../../../common/src",
   "Ext.rtl.EventObjectImpl": "../../../ext/src/rtl/EventObject.js",
   "search.Application": "../../app/application.js"
 });
@@ -56,8 +57,8 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
-  "search.store.Persons": [],
   "search.store.Categories": [],
+  "Thereza.store.Cards": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [],
   "ExtThemeNeptune.layout.component.Dock": [],
@@ -168,8 +169,8 @@ Ext.ClassManager.addNameAliasMappings({
     "simlet.basic"
   ],
   "Ext.ux.SlidingPager": [],
-  "search.store.Persons": [],
   "search.store.Categories": [],
+  "Thereza.store.Cards": [],
   "Ext.ux.TabReorderer": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"

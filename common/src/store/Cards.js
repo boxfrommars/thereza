@@ -1,4 +1,4 @@
-Ext.define('search.store.Persons', {
+Ext.define('Thereza.store.Cards', {
     extend: 'Ext.data.Store',
     fields: ['id', 'name', 'address', 'birthdate', 'age', 'categories', 'passport_data', 'case_num', 'date_closed', 'date_last_pay'],
     data: [
