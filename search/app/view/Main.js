@@ -248,14 +248,14 @@ Ext.define('search.view.Main', {
                 trigger1Cls: Ext.baseCSSPrefix + 'form-clear-trigger',
                 trigger2Cls: Ext.baseCSSPrefix + 'form-search-trigger'
             }
-        ]
-//        bbar: {
-//            xtype: 'pagingtoolbar',
-//            store: 'Cards',
-//            displayInfo: true,
-////            displayMsg: 'Displaying topics {0} - {1} of {2}',
-//            emptyMsg: "No topics to display"
-//        }
+        ],
+        bbar: {
+            xtype: 'pagingtoolbar',
+            store: 'Cards',
+            displayInfo: true,
+//            displayMsg: 'Displaying topics {0} - {1} of {2}',
+            emptyMsg: "No topics to display"
+        }
     }],
 
     dockedItems: [{
