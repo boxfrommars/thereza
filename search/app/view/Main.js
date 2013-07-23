@@ -10,6 +10,7 @@ Ext.define('search.view.Main', {
         'Ext.form.field.Number',
         'Ext.form.field.ComboBox',
         'Ext.form.CheckboxGroup',
+        'Ext.form.RadioGroup',
         'Ext.form.FieldSet',
         'Ext.toolbar.TextItem',
         'Ext.toolbar.Paging',
@@ -34,14 +35,16 @@ Ext.define('search.view.Main', {
         bodyPadding: 15,
         items: [{
             xtype: 'form',
-            buttons: [
-                {
-                    text   :'Искать'
-                },
-                {
-                    text   : 'Сбросить'
+            id: 'search-card-form',
+            buttons: [{
+                text: 'Искать',
+                action: 'search'
+            }, {
+                text: 'Сбросить',
+                handler: function() {
+                    this.up('form').getForm().reset();
                 }
-            ],
+            }],
             layout: {
                 type: 'vbox'
             },
@@ -51,22 +54,13 @@ Ext.define('search.view.Main', {
                 width: 700
             },
             items: [{
-                xtype: 'numberfield',
-                name: 'num',
+                xtype: 'textfield',
+                name: 'card_uid',
                 fieldLabel: 'Номер дела'
             }, {
                 xtype: 'textfield',
-                name: 'lastname',
+                name: 'last_name',
                 fieldLabel: 'Фамилия'
-            }, {
-                xtype: 'combobox',
-                name: 'id_category',
-                fieldLabel: 'Категория',
-                valueField: 'id',
-                displayField: 'name',
-                store: 'Categories',
-                multiSelect: true,
-                editable: false
             }, {
                 xtype: 'textfield',
                 name: 'address',
@@ -76,23 +70,16 @@ Ext.define('search.view.Main', {
                 collapsible: true,
                 collapsed: true,
                 layout: 'hbox',
-                title: 'Постоянные выплаты',
+                title: 'Выплаты',
                 items: [{
                     flex:1,
                     defaults: {
-                        xtype: 'checkbox'
+                        xtype: 'checkbox',
+                        name: 'ma_id'
                     },
                     xtype: 'checkboxgroup',
                     columns: 2,
-                    items: [ // @TODO вынести в store
-                        {boxLabel: 'Item 1'},
-                        {boxLabel: 'Item 2'},
-                        {boxLabel: 'Item 3'},
-                        {boxLabel: 'Item 4'},
-                        {boxLabel: 'Item 5'},
-                        {boxLabel: 'Item 6'},
-                        {boxLabel: 'Item 7'}
-                    ]
+                    items: []
                 }, {
                     flex:1,
                     defaults: {
@@ -103,10 +90,12 @@ Ext.define('search.view.Main', {
                         fieldLabel: 'Учитывать даты'
                     }, {
                         xtype: 'datefield',
+                        name: 'mas_date_from',
                         fieldLabel: 'Дата начала',
                         editable: false
                     }, {
                         xtype: 'datefield',
+                        name: 'mas_date_to',
                         fieldLabel: 'Дата конца',
                         editable: false
                     }]
@@ -118,21 +107,15 @@ Ext.define('search.view.Main', {
                 layout: 'hbox',
                 title: 'Льготные категории',
                 items: [{
+                    xtype: 'checkboxgroup',
+                    id: 'search-form-benefitCategoriesList',
                     flex:1,
                     defaults: {
-                        xtype: 'checkbox'
+                        xtype: 'checkbox',
+                        name: 'bnf_id'
                     },
-                    xtype: 'checkboxgroup',
                     columns: 2,
-                    items: [ // @TODO вынести в store
-                        {boxLabel: 'Item 1'},
-                        {boxLabel: 'Item 2'},
-                        {boxLabel: 'Item 3'},
-                        {boxLabel: 'Item 4'},
-                        {boxLabel: 'Item 5'},
-                        {boxLabel: 'Item 6'},
-                        {boxLabel: 'Item 7'}
-                    ]
+                    items: []
                 }, {
                     flex:1,
                     defaults: {
@@ -143,10 +126,12 @@ Ext.define('search.view.Main', {
                         fieldLabel: 'Учитывать даты'
                     }, {
                         xtype: 'datefield',
+                        name: 'bnfs_date_from',
                         fieldLabel: 'Дата начала',
                         editable: false
                     }, {
                         xtype: 'datefield',
+                        name: 'bnfs_date_to',
                         fieldLabel: 'Дата конца',
                         editable: false
                     }]
@@ -157,22 +142,30 @@ Ext.define('search.view.Main', {
                 fieldLabel: 'Возраст'
             }, {
                 xtype: 'numberfield',
-                name: 'num',
+                name: 'w_exp',
                 fieldLabel: 'Стаж'
             }, {
                 xtype: 'fieldset',
                 title: 'Модификаторы',
                 items: [{
                     defaults: {
-                        xtype: 'checkbox'
+                        xtype: 'checkbox',
+                        name: 'search_type'
                     },
                     xtype: 'checkboxgroup',
-                    items: [
-                        {boxLabel: 'В найденном'},
-                        {boxLabel: 'Исключить найденное'},
-                        {boxLabel: 'В удалённых'},
-                        {boxLabel: 'В закрытых'}
-                    ]
+                    items: [{
+                        boxLabel: 'В найденном',
+                        inputValue: 'in'
+                    }, {
+                        boxLabel: 'Исключить найденное',
+                        inputValue: 'exclude'
+                    }, {
+                        boxLabel: 'В удалённых',
+                        inputValue: 'deleted'
+                    }, {
+                        boxLabel: 'В закрытых',
+                        inputValue: 'closed'
+                    }]
                 }]
             }]
         }]
@@ -186,19 +179,17 @@ Ext.define('search.view.Main', {
             header: "№ дела",
             flex: 1,
             sortable: true,
-            dataIndex: 'case_num'
+            dataIndex: 'card_uid'
         }, {
             header: "ФИО",
             flex: 3,
             sortable: true,
-            dataIndex: 'name'
+            dataIndex: 'fio'
         }, {
             header: "Дата рождения",
             flex: 2,
             sortable: true,
-            xtype: 'datecolumn',
-            dataIndex: 'birthdate',
-            format: 'd.m.Y'
+            dataIndex: 'birth_date'
         }, {
             header: "Возраст",
             flex: 1,
@@ -208,7 +199,7 @@ Ext.define('search.view.Main', {
             header: "Льготные категории",
             flex: 3,
             sortable: true,
-            dataIndex: 'categories'
+            dataIndex: 'benefits_text'
         }, {
             header: "Адрес",
             flex: 3,
@@ -223,16 +214,12 @@ Ext.define('search.view.Main', {
             header: "Дата закрытия",
             flex: 2,
             sortable: true,
-            xtype: 'datecolumn',
-            dataIndex: 'date_closed',
-            format: 'd.m.Y'
+            dataIndex: 'last_close_date'
         }, {
             header: "Последняя выплата",
             flex: 3,
             sortable: true,
-            xtype: 'datecolumn',
-            dataIndex: 'date_last_pay',
-            format: 'd.m.Y'
+            dataIndex: 'last_material_assistance'
         }],
 
         loadMask: true,
@@ -251,10 +238,8 @@ Ext.define('search.view.Main', {
         ],
         bbar: {
             xtype: 'pagingtoolbar',
-            store: 'Cards',
-            displayInfo: true,
-//            displayMsg: 'Displaying topics {0} - {1} of {2}',
-            emptyMsg: "No topics to display"
+            store: 'Thereza.store.Cards',
+            displayInfo: true
         }
     }],
 

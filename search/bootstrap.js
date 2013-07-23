@@ -5,155 +5,174 @@
  * metadata-driven class system features 
  */
 Ext.Loader.addClassPathMappings({
-  " Ext.Msg": "../ext/src/window/MessageBox.js",
-  "ExtThemeNeptune": "../ext/packages/ext-theme-neptune/overrides",
+  "Ext.locale.ru.picker.Month": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.HtmlEditor": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.VTypes": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.window.MessageBox": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.rtl.EventObjectImpl": "../ext/src/rtl/EventObject.js",
+  "Ext.locale.ru.Component": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.grid.GroupingFeature": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.Basic": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.Number": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
   "Ext": "../ext/src",
   "search": "app",
+  "Ext.locale.ru.view.AbstractView": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.picker.Date": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.tab.Tab": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "search.Application": "app/application.js",
+  "Ext.locale.ru.view.View": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.grid.PropertyColumnModel": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.Date": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "ExtThemeNeptune": "../ext/packages/ext-theme-neptune/overrides",
+  "Ext.locale.ru.grid.header.Container": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
   "Thereza": "../common/src",
-  "Ext.rtl.EventObjectImpl": "../ext/src/rtl/EventObject.js",
-  "search.Application": "app/application.js"
+  "Ext.locale.ru.form.field.Base": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.Text": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.toolbar.Paging": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  "Ext.locale.ru.form.field.ComboBox": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js",
+  " Ext.Msg": "../ext/src/window/MessageBox.js",
+  "Ext.locale.ru.grid.plugin.DragDrop": "../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
-  "Ext.ux.BoxReorderer": [],
-  "ExtThemeNeptune.menu.Menu": [],
   "ExtThemeNeptune.container.ButtonGroup": [],
-  "Ext.ux.grid.filter.Filter": [],
-  "Ext.ux.GroupTabRenderer": [],
-  "Ext.ux.grid.TransformGrid": [],
+  "Ext.locale.ru.form.field.VTypes": [],
+  "Thereza.model.Card": [],
   "Ext.ux.ajax.DataSimlet": [],
-  "Ext.ux.FieldReplicator": [],
+  "Ext.ux.grid.TransformGrid": [],
   "search.view.Main": [],
-  "Ext.ux.grid.filter.ListFilter": [],
-  "ExtThemeNeptune.panel.Panel": [],
+  "Ext.locale.ru.grid.GroupingFeature": [],
   "ExtThemeNeptune.toolbar.Paging": [],
+  "Ext.locale.ru.form.field.Number": [],
   "search.view.Viewport": [],
-  "Ext.ux.event.Driver": [],
   "Ext.ux.ajax.XmlSimlet": [],
-  "Ext.ux.dd.PanelFieldDragZone": [],
-  "search.Application": [],
+  "Ext.ux.event.Driver": [],
+  "Ext.locale.ru.view.AbstractView": [],
   "Ext.ux.DataView.DragSelector": [],
-  "ExtThemeNeptune.toolbar.Toolbar": [],
-  "ExtThemeNeptune.tab.Tab": [],
+  "search.Application": [],
+  "Ext.locale.ru.view.View": [],
+  "Ext.locale.ru.grid.PropertyColumnModel": [],
   "Ext.ux.grid.menu.ListMenu": [],
-  "Ext.ux.GMapPanel": [],
   "Ext.ux.form.MultiSelect": [
     "Ext.ux.Multiselect"
   ],
-  "Ext.ux.DataView.LabelEditor": [],
-  "Ext.ux.GroupTabPanel": [],
-  "Ext.ux.grid.filter.StringFilter": [],
-  "Ext.ux.statusbar.ValidationStatus": [],
   "ExtThemeNeptune.grid.column.RowNumberer": [],
-  "Ext.ux.layout.Center": [],
   "Ext.ux.PreviewPlugin": [],
-  "Ext.ux.DataView.Animated": [],
-  "ExtThemeNeptune.resizer.Splitter": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [],
   "Ext.ux.ProgressBarPager": [],
   "Ext.ux.CellDragDrop": [],
-  "Ext.ux.statusbar.StatusBar": [
-    "Ext.ux.StatusBar"
-  ],
+  "Ext.locale.ru.form.field.HtmlEditor": [],
   "Ext.ux.ajax.Simlet": [],
   "Ext.ux.SlidingPager": [],
   "search.store.Categories": [],
-  "Thereza.store.Cards": [],
   "Ext.ux.TabReorderer": [],
+  "Thereza.store.Cards": [],
   "Ext.ux.grid.filter.NumericFilter": [],
-  "ExtThemeNeptune.layout.component.Dock": [],
   "ExtThemeNeptune.panel.Table": [],
-  "Ext.ux.grid.menu.RangeMenu": [],
   "Ext.ux.event.Recorder": [],
-  "Ext.ux.RowExpander": [],
-  "Ext.ux.event.Player": [],
-  "ExtThemeNeptune.panel.Tool": [],
+  "Ext.locale.ru.picker.Date": [],
   "Ext.ux.ajax.SimManager": [],
-  "search.store.PayTypes": [],
   "Ext.ux.grid.filter.BooleanFilter": [],
-  "Ext.ux.ToolbarDroppable": [],
-  "Ext.ux.event.Maker": [],
+  "search.store.PayTypes": [],
   "Ext.ux.TabScrollerMenu": [],
   "ExtThemeNeptune.menu.Separator": [],
   "Ext.ux.IFrame": [],
-  "Ext.ux.DataView.Draggable": [],
-  "search.controller.Main": [],
-  "Ext.ux.TabCloseMenu": [],
   "Ext.ux.form.SearchField": [],
   "Ext.ux.dd.CellFieldDropZone": [],
   "Ext.ux.LiveSearchGridPanel": [],
   "Ext.ux.grid.filter.DateFilter": [],
+  "Ext.ux.TreePicker": [],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "Ext.data.PagingMemoryProxy"
+  ],
+  "Ext.ux.BoxReorderer": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.GroupTabRenderer": [],
+  "Ext.locale.ru.window.MessageBox": [],
+  "Ext.ux.FieldReplicator": [],
+  "Thereza.store.BenefitCategories": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "Ext.ux.grid.filter.ListFilter": [],
+  "Ext.locale.ru.form.Basic": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
+  "ExtThemeNeptune.tab.Tab": [],
+  "Ext.locale.ru.form.field.Date": [],
+  "Ext.ux.GMapPanel": [],
+  "Ext.locale.ru.grid.header.Container": [],
+  "Ext.ux.GroupTabPanel": [],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.locale.ru.form.field.Text": [],
+  "Ext.ux.grid.filter.StringFilter": [],
+  "Ext.ux.statusbar.ValidationStatus": [],
+  "Ext.ux.layout.Center": [],
+  "Ext.locale.ru.form.field.ComboBox": [],
+  "Ext.ux.DataView.Animated": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "Ext.locale.ru.picker.Month": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "Ext.ux.StatusBar"
+  ],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.locale.ru.Component": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.event.Player": [],
+  "ExtThemeNeptune.panel.Tool": [],
+  "Ext.locale.ru.tab.Tab": [],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.DataView.Draggable": [],
+  "search.controller.Main": [],
+  "Ext.ux.TabCloseMenu": [],
+  "Ext.locale.ru.form.field.Base": [],
+  "Ext.locale.ru.toolbar.Paging": [],
   "Ext.ux.DataTip": [],
   "Ext.ux.grid.filter.DateTimeFilter": [],
   "Ext.ux.form.ItemSelector": [
     "Ext.ux.ItemSelector"
   ],
-  "Ext.ux.TreePicker": [],
   "Ext.ux.ajax.JsonSimlet": [],
+  "Ext.locale.ru.grid.plugin.DragDrop": [],
   "ExtThemeNeptune.form.field.HtmlEditor": [],
   "Ext.ux.Spotlight": [],
   "Ext.ux.grid.FiltersFeature": [],
-  "ExtThemeNeptune.picker.Month": [],
-  "ExtThemeNeptune.grid.RowEditor": [],
-  "ExtThemeNeptune.Component": [],
-  "Ext.ux.data.PagingMemoryProxy": [
-    "Ext.data.PagingMemoryProxy"
-  ]
+  "ExtThemeNeptune.Component": []
 });
 Ext.ClassManager.addNameAliasMappings({
-  "Ext.ux.BoxReorderer": [],
-  "ExtThemeNeptune.menu.Menu": [],
   "ExtThemeNeptune.container.ButtonGroup": [],
-  "Ext.ux.grid.filter.Filter": [],
-  "Ext.ux.GroupTabRenderer": [
-    "plugin.grouptabrenderer"
-  ],
-  "Ext.ux.grid.TransformGrid": [],
+  "Ext.locale.ru.form.field.VTypes": [],
+  "Thereza.model.Card": [],
   "Ext.ux.ajax.DataSimlet": [],
-  "Ext.ux.FieldReplicator": [],
+  "Ext.ux.grid.TransformGrid": [],
   "search.view.Main": [
     "widget.app-main"
   ],
-  "Ext.ux.grid.filter.ListFilter": [
-    "gridfilter.list"
-  ],
-  "ExtThemeNeptune.panel.Panel": [],
+  "Ext.locale.ru.grid.GroupingFeature": [],
   "ExtThemeNeptune.toolbar.Paging": [],
+  "Ext.locale.ru.form.field.Number": [],
   "search.view.Viewport": [],
-  "Ext.ux.event.Driver": [],
   "Ext.ux.ajax.XmlSimlet": [
     "simlet.xml"
   ],
-  "Ext.ux.dd.PanelFieldDragZone": [],
-  "search.Application": [],
+  "Ext.ux.event.Driver": [],
+  "Ext.locale.ru.view.AbstractView": [],
   "Ext.ux.DataView.DragSelector": [],
-  "ExtThemeNeptune.toolbar.Toolbar": [],
-  "ExtThemeNeptune.tab.Tab": [],
+  "search.Application": [],
+  "Ext.locale.ru.view.View": [],
+  "Ext.locale.ru.grid.PropertyColumnModel": [],
   "Ext.ux.grid.menu.ListMenu": [],
-  "Ext.ux.GMapPanel": [
-    "widget.gmappanel"
-  ],
   "Ext.ux.form.MultiSelect": [
     "widget.multiselect",
     "widget.multiselectfield"
   ],
-  "Ext.ux.DataView.LabelEditor": [],
-  "Ext.ux.GroupTabPanel": [
-    "widget.grouptabpanel"
-  ],
-  "Ext.ux.grid.filter.StringFilter": [
-    "gridfilter.string"
-  ],
-  "Ext.ux.statusbar.ValidationStatus": [],
   "ExtThemeNeptune.grid.column.RowNumberer": [],
-  "Ext.ux.layout.Center": [
-    "layout.ux.center"
-  ],
   "Ext.ux.PreviewPlugin": [
     "plugin.preview"
   ],
-  "Ext.ux.DataView.Animated": [],
-  "ExtThemeNeptune.resizer.Splitter": [],
   "Ext.ux.ajax.SimXhr": [],
   "Ext.ux.event.RecorderManager": [
     "widget.eventrecordermanager"
@@ -162,44 +181,31 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.CellDragDrop": [
     "plugin.celldragdrop"
   ],
-  "Ext.ux.statusbar.StatusBar": [
-    "widget.statusbar"
-  ],
+  "Ext.locale.ru.form.field.HtmlEditor": [],
   "Ext.ux.ajax.Simlet": [
     "simlet.basic"
   ],
   "Ext.ux.SlidingPager": [],
   "search.store.Categories": [],
-  "Thereza.store.Cards": [],
   "Ext.ux.TabReorderer": [],
+  "Thereza.store.Cards": [],
   "Ext.ux.grid.filter.NumericFilter": [
     "gridfilter.numeric"
   ],
-  "ExtThemeNeptune.layout.component.Dock": [],
   "ExtThemeNeptune.panel.Table": [],
-  "Ext.ux.grid.menu.RangeMenu": [],
   "Ext.ux.event.Recorder": [],
-  "Ext.ux.RowExpander": [],
-  "Ext.ux.event.Player": [],
-  "ExtThemeNeptune.panel.Tool": [],
+  "Ext.locale.ru.picker.Date": [],
   "Ext.ux.ajax.SimManager": [],
-  "search.store.PayTypes": [],
   "Ext.ux.grid.filter.BooleanFilter": [
     "gridfilter.boolean"
   ],
-  "Ext.ux.ToolbarDroppable": [],
-  "Ext.ux.event.Maker": [],
+  "search.store.PayTypes": [],
   "Ext.ux.TabScrollerMenu": [
     "plugin.tabscrollermenu"
   ],
   "ExtThemeNeptune.menu.Separator": [],
   "Ext.ux.IFrame": [
     "widget.uxiframe"
-  ],
-  "Ext.ux.DataView.Draggable": [],
-  "search.controller.Main": [],
-  "Ext.ux.TabCloseMenu": [
-    "plugin.tabclosemenu"
   ],
   "Ext.ux.form.SearchField": [
     "widget.searchfield"
@@ -209,6 +215,71 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.grid.filter.DateFilter": [
     "gridfilter.date"
   ],
+  "Ext.ux.TreePicker": [
+    "widget.treepicker"
+  ],
+  "ExtThemeNeptune.grid.RowEditor": [],
+  "ExtThemeNeptune.picker.Month": [],
+  "Ext.ux.data.PagingMemoryProxy": [
+    "proxy.pagingmemory"
+  ],
+  "Ext.ux.BoxReorderer": [],
+  "ExtThemeNeptune.menu.Menu": [],
+  "Ext.ux.grid.filter.Filter": [],
+  "Ext.ux.GroupTabRenderer": [
+    "plugin.grouptabrenderer"
+  ],
+  "Ext.locale.ru.window.MessageBox": [],
+  "Ext.ux.FieldReplicator": [],
+  "Thereza.store.BenefitCategories": [],
+  "ExtThemeNeptune.panel.Panel": [],
+  "Ext.ux.grid.filter.ListFilter": [
+    "gridfilter.list"
+  ],
+  "Ext.locale.ru.form.Basic": [],
+  "Ext.ux.dd.PanelFieldDragZone": [],
+  "ExtThemeNeptune.toolbar.Toolbar": [],
+  "ExtThemeNeptune.tab.Tab": [],
+  "Ext.locale.ru.form.field.Date": [],
+  "Ext.ux.GMapPanel": [
+    "widget.gmappanel"
+  ],
+  "Ext.locale.ru.grid.header.Container": [],
+  "Ext.ux.GroupTabPanel": [
+    "widget.grouptabpanel"
+  ],
+  "Ext.ux.DataView.LabelEditor": [],
+  "Ext.locale.ru.form.field.Text": [],
+  "Ext.ux.grid.filter.StringFilter": [
+    "gridfilter.string"
+  ],
+  "Ext.ux.statusbar.ValidationStatus": [],
+  "Ext.ux.layout.Center": [
+    "layout.ux.center"
+  ],
+  "Ext.locale.ru.form.field.ComboBox": [],
+  "Ext.ux.DataView.Animated": [],
+  "ExtThemeNeptune.resizer.Splitter": [],
+  "Ext.locale.ru.picker.Month": [],
+  "Ext.ux.statusbar.StatusBar": [
+    "widget.statusbar"
+  ],
+  "ExtThemeNeptune.layout.component.Dock": [],
+  "Ext.ux.grid.menu.RangeMenu": [],
+  "Ext.locale.ru.Component": [],
+  "Ext.ux.RowExpander": [],
+  "Ext.ux.event.Player": [],
+  "ExtThemeNeptune.panel.Tool": [],
+  "Ext.locale.ru.tab.Tab": [],
+  "Ext.ux.ToolbarDroppable": [],
+  "Ext.ux.event.Maker": [],
+  "Ext.ux.DataView.Draggable": [],
+  "search.controller.Main": [],
+  "Ext.ux.TabCloseMenu": [
+    "plugin.tabclosemenu"
+  ],
+  "Ext.locale.ru.form.field.Base": [],
+  "Ext.locale.ru.toolbar.Paging": [],
   "Ext.ux.DataTip": [
     "plugin.datatip"
   ],
@@ -219,25 +290,19 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.itemselector",
     "widget.itemselectorfield"
   ],
-  "Ext.ux.TreePicker": [
-    "widget.treepicker"
-  ],
   "Ext.ux.ajax.JsonSimlet": [
     "simlet.json"
   ],
+  "Ext.locale.ru.grid.plugin.DragDrop": [],
   "ExtThemeNeptune.form.field.HtmlEditor": [],
   "Ext.ux.Spotlight": [],
   "Ext.ux.grid.FiltersFeature": [
     "feature.filters"
   ],
-  "ExtThemeNeptune.picker.Month": [],
-  "ExtThemeNeptune.grid.RowEditor": [],
-  "ExtThemeNeptune.Component": [],
-  "Ext.ux.data.PagingMemoryProxy": [
-    "proxy.pagingmemory"
-  ]
+  "ExtThemeNeptune.Component": []
 });
 Ext.Loader.loadScript("../ext/packages/ext-theme-neptune/overrides/Component.js");
+Ext.Loader.loadScript("../ext/packages/ext-locale/overrides/ru/ext-locale-ru.js");
 Ext.Loader.loadScript("../ext/packages/ext-theme-neptune/overrides/panel/Panel.js");
 Ext.Loader.loadScript("../ext/packages/ext-theme-neptune/overrides/layout/component/Dock.js");
 Ext.Loader.loadScript("../ext/packages/ext-theme-neptune/overrides/toolbar/Toolbar.js");
